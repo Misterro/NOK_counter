@@ -6,7 +6,7 @@ import requests as requests
 
 # functional for requests
 def get(site, url):
-    req = requests.get(url).json()["page"]
+    req = requests.get(url).json()["count"]
     print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M'), site, req)
 
 
